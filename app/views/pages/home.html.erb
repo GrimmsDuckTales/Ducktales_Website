@@ -1,7 +1,7 @@
 <div class="container1">
-    <img src="/assets/Ducki.png" alt="Duck Image" class="duck-image">
+    <img src="/assets/DuckCo.png" alt="Duck Image" class="duck-image">
     <div class="text-block shadow p-3 mb-5 rounded-4" id="myDiv">
-    <pre>
+      <pre>
       customer = <span class="blue">True</span>
       work_with_us = <span class="blue">True</span>
 
@@ -13,15 +13,43 @@
         else:
          <span class="yellow"> print(<span class="green">"Hey there! Why not work with us? We promise you won't regret it!")</span></span>
       </pre>
+      <button class="button-30" style="width: 70px; height: 20px; font-size: 12px;" role="button" id="click-back">Back</button>
     </div>
-    <div class="content-block">
-      <h1>We Develop IT Solutions<br> for Fun!🤓</h1>
-      <p>As twin brothers, we thrive on every new challenge!<br>
-         Want to learn more about our journey?</p>
-      <button class="button-30" role="button">Explore Our Story!</button>
+        <div class="text-block2">
+            <button class="button-30" style="width: 70px; height: 20px; font-size: 12px;" role="button" id="click-button">Click me!</button>
+        </div>
+
+        <div class="content-block">
+            <h1>We Develop IT Solutions<br> for Fun!🤓</h1>
+            <p>As twin brothers, we thrive on every new challenge!<br>
+                Want to learn more about our journey?</p>
+            <button class="button-30" role="button">Explore Our Story!</button>
+        </div>
     </div>
-  </div>
-</div>
-<div class = "container2">
-<p class = "white">Explore Our Story!</p>
-</div>
+
+    <div class="container2">
+        <p class="white">Explore Our Story!</p>
+    </div>
+
+
+<%# Javascript  %>
+    <script>
+        // Get references to the button and the text block
+
+        var button = document.getElementById("click-button");
+        var buttonb = document.getElementById("click-back");
+        var textBlock = document.getElementById("myDiv");
+
+        // Variable to track the state
+        var georg = false;
+
+        // Event handler for the button click
+        button.addEventListener("click", function() {
+           textBlock.style.display = "block";
+
+        });
+        buttonb.addEventListener("click", function() {
+           textBlock.style.display = "none";
+
+        });
+    </script>
